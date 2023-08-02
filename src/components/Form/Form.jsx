@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { selectContacts } from 'redux/contacts/contactsSelectors';
 import { addContactThunk } from 'redux/contacts/contactsOperations';
 import { Notify } from 'notiflix';
-// import { current } from '@reduxjs/toolkit';
+
 
 export default function Form({ title }) {
   const [name, setName] = useState('');
@@ -24,10 +24,7 @@ export default function Form({ title }) {
   const handleSubmit = event => {
     event.preventDefault();
 
-    const contactData = {
-      name: name,
-      number: number,
-    };
+    const contactData = {name, number};
     const loveredContactData = contactData.name.toLowerCase();
     const isContactExist = contacts.some(
       contact => contact.name.toLowerCase() === loveredContactData

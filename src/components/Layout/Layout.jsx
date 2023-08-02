@@ -5,6 +5,7 @@ import UserMenu from 'components/UserMenu/UserMenu';
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { getIsLoggedIn } from 'redux/auth/authSelectors';
+import PropTypes from 'prop-types';
 
 function Layout({ children }) {
   const isLoggedIn = useSelector(getIsLoggedIn);
@@ -16,5 +17,8 @@ function Layout({ children }) {
     </>
   );
 }
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default Layout;

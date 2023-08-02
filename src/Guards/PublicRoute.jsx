@@ -10,7 +10,7 @@ const PublicRoute = ({ component: Component, redirectTo = '/' }) => {
 };
 
 PublicRoute.propTypes = {
-  children: PropTypes.node.isRequired,
+  component: PropTypes.elementType.isRequired,
+  redirectTo: PropTypes.string
 };
-
 export default PublicRoute;

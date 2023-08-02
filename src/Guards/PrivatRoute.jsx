@@ -15,7 +15,7 @@ const PrivatRoute = ({ component: Component, redirectTo = '/' }) => {
 };
 
 PrivatRoute.propTypes = {
-  children: PropTypes.node.isRequired,
+  component: PropTypes.elementType.isRequired,
+  redirectTo: PropTypes.string
 };
-
 export default PrivatRoute;
