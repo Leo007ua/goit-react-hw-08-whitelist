@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/goit-react-hw-08-whitelist/static/css/main.7acaea2f.css",
-    "main.js": "/goit-react-hw-08-whitelist/static/js/main.a6abf569.js",
+    "main.js": "/goit-react-hw-08-whitelist/static/js/main.63987f71.js",
     "static/js/229.72030cfc.chunk.js": "/goit-react-hw-08-whitelist/static/js/229.72030cfc.chunk.js",
-    "static/js/479.35b75121.chunk.js": "/goit-react-hw-08-whitelist/static/js/479.35b75121.chunk.js",
+    "static/js/479.b674a781.chunk.js": "/goit-react-hw-08-whitelist/static/js/479.b674a781.chunk.js",
     "static/js/314.74e9c703.chunk.js": "/goit-react-hw-08-whitelist/static/js/314.74e9c703.chunk.js",
     "static/js/285.9af9289f.chunk.js": "/goit-react-hw-08-whitelist/static/js/285.9af9289f.chunk.js",
     "static/js/539.1bcb94e6.chunk.js": "/goit-react-hw-08-whitelist/static/js/539.1bcb94e6.chunk.js",
     "static/js/234.cdbadef0.chunk.js": "/goit-react-hw-08-whitelist/static/js/234.cdbadef0.chunk.js",
     "index.html": "/goit-react-hw-08-whitelist/index.html",
     "main.7acaea2f.css.map": "/goit-react-hw-08-whitelist/static/css/main.7acaea2f.css.map",
-    "main.a6abf569.js.map": "/goit-react-hw-08-whitelist/static/js/main.a6abf569.js.map",
+    "main.63987f71.js.map": "/goit-react-hw-08-whitelist/static/js/main.63987f71.js.map",
     "229.72030cfc.chunk.js.map": "/goit-react-hw-08-whitelist/static/js/229.72030cfc.chunk.js.map",
-    "479.35b75121.chunk.js.map": "/goit-react-hw-08-whitelist/static/js/479.35b75121.chunk.js.map",
+    "479.b674a781.chunk.js.map": "/goit-react-hw-08-whitelist/static/js/479.b674a781.chunk.js.map",
     "314.74e9c703.chunk.js.map": "/goit-react-hw-08-whitelist/static/js/314.74e9c703.chunk.js.map",
     "285.9af9289f.chunk.js.map": "/goit-react-hw-08-whitelist/static/js/285.9af9289f.chunk.js.map",
     "539.1bcb94e6.chunk.js.map": "/goit-react-hw-08-whitelist/static/js/539.1bcb94e6.chunk.js.map",
@@ -20,6 +20,6 @@
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.a6abf569.js"
+    "static/js/main.63987f71.js"
   ]
 }
