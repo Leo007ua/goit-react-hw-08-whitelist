@@ -1,11 +1,12 @@
 import React, { Suspense, lazy, useEffect } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 import Layout from './Layout/Layout';
 import { useDispatch } from 'react-redux';
 import { refreshUser } from 'redux/auth/authOperations';
 import Loader from './Loader/Loader';
-import PrivatRoute from '../Guards/PrivatRoute';
+
 import PublicRoute from '../Guards/PublicRoute';
+import PrivateRoute from '../Guards/PrivatRoute';
 
 const Home = lazy(() => import('pages/Home/Home'));
 const RegistrationPage = lazy(() =>
@@ -16,6 +17,7 @@ const Contacts = lazy(() => import('pages/Contact/Contacts'));
 
 export default function App() {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   useEffect(() => {
     dispatch(refreshUser());
@@ -43,17 +45,15 @@ export default function App() {
           />
           <Route
             path="/contacts"
-            element={<PrivatRoute component={Contacts} redirectTo="/login" />}
+            element={<PrivateRoute component={Contacts} redirectTo="/login" />}
           />
           <Route
-            path="*"
-            element={
-              <PublicRoute>
-                <Home />
-              </PublicRoute>
-            }
+            path="/*" // Невідомий маршрут
+            element={() => {
+              navigate('/');
+              return null;
+            }}
           />
-          Ф{' '}
         </Routes>
       </Suspense>
     </Layout>
