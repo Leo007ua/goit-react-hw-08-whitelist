@@ -1,5 +1,5 @@
 import React, { Suspense, lazy, useEffect } from 'react';
-import { Route, Routes, useNavigate } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import Layout from './Layout/Layout';
 import { useDispatch } from 'react-redux';
 import { refreshUser } from 'redux/auth/authOperations';
@@ -17,7 +17,7 @@ const Contacts = lazy(() => import('pages/Contact/Contacts'));
 
 export default function App() {
   const dispatch = useDispatch();
-  const navigate = useNavigate();
+ 
 
   useEffect(() => {
     dispatch(refreshUser());
@@ -48,12 +48,9 @@ export default function App() {
             element={<PrivateRoute component={Contacts} redirectTo="/login" />}
           />
           <Route
-            path="/*" // Невідомий маршрут
-            element={() => {
-              navigate('/');
-              return null;
-            }}
-          />
+            path="*" // Невідомий маршрут
+            element={<Navigate to="/" replace />} />
+            
         </Routes>
       </Suspense>
     </Layout>
